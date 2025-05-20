@@ -1,10 +1,7 @@
 # cara deploy aplikasi psat2425 menurut saya hehe 😊👍
-
-bismillah dahulu
-
 # langkah langkah 👍
 
-1. unduh repo dari atau file zipnya https://github.com/paknux/psat2425 kemudian kita ekstrak
+1. bismillah dahulu unduh repo dari atau file zipnya https://github.com/paknux/psat2425 kemudian kita ekstrak
 2. buka vscode buka folder psat2425 kemudian edit readme.md ini tutornya
 3. kemudian masuk ke akun github kalian buat repositori baru dengan nama psat2425 terus kalian push file download tadi di vscode
 4. jika sudah kalian pergi ke akun aws kalian terus pergi ke moduls terus luncurkan aws terus cari RDS pergi ke database lalu buat database,kalian bisa gunakan security groups yang serverDB dan serverWeb jika belum kalian bisa buat security grupnya seperti langkah ini
