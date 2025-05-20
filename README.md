@@ -5,23 +5,25 @@
 2. buka vscode buka folder psat2425 kemudian edit readme.md ini tutornya
 3. kemudian masuk ke akun github kalian buat repositori baru dengan nama psat2425 terus kalian push file download tadi di vscode
 4. jika sudah kalian pergi ke akun aws kalian terus pergi ke moduls terus luncurkan aws terus cari RDS pergi ke database lalu buat database,kalian bisa gunakan security groups yang serverDB dan serverWeb jika belum kalian bisa buat security grupnya seperti langkah ini
+5. jika sudah buat SG(security groups) kalian bisa lanjut buat databasenya
+6. buat instance,pergi ke EC2 pilih yg instance kemudian buat
+7. jika database dan instancenya sudah tinggal kita konek ke instancenya
+8. kalian klik instance tersebut kemudian pilih connect terus pilih connect lagi
+9. jika sudah kalian akan masuk ke ubuntu servernya nah di ubuntu ini kalian tinnggal masukan bash scriptingnya seperti ini
+10. jika sudah kalian bisa salin ip publick yg di bawah tempel ke browser terus masukan sandi apk nya yaitu user admin passwordnya 123
+11. jika sudah kalian bisa tambahkan data kalian atau edit data kalian selesai
 
 # Buat security group SG-ServerDB
-
-allow inbound MySQL (3306) from anywhereIPv4 (0.0.0.0/0)
+ allow inbound MySQL (3306) from anywhereIPv4 (0.0.0.0/0)
 
 # Buat security group SG-ServerWeb
-
-allow inbound SSH (22) from anywhereIPv4 (0.0.0.0/0)  
+ allow inbound SSH (22) from anywhereIPv4 (0.0.0.0/0)  
  allow inbound HTTP (80) from anywhereIPv4 (0.0.0.0/0)  
  allow inbound HTTPS (443) from anywhereIPv4 (0.0.0.0/0)
 
-untuk security groups ada di vpc kalian bisa cari dan buat disitu
+ untuk security groups ada di vpc kalian bisa cari dan buat disitu
 
-5. jika sudah buat SG(security groups) kalian bisa lanjut buat databasenya
-
-   # buat database
-
+ # buat database
    1. kalian pilih yang standard aja lalu pilih yang mysql
    2. untuk templates nya pilih yang free tier lalu DB cluster identifier= ini bebas namannya apa aja
    3. kemdian untuk Master Username : (biarkan admin ) Master Password : isi misal P4ssw0rdd untuk public akses = no ya masa db dapat diakses publik
@@ -30,19 +32,13 @@ untuk security groups ada di vpc kalian bisa cari dan buat disitu
    6. Tunggu sampai EndPoint muncul, bisa dicek dengan MySQL client (MySQLFront, HeidiSQL)
    7. Buat Database dan tabel jika diperlukan dengan MySQL Client kita
 
-6. buat instance,oergi ke EC2 pilih yg instance kemudian buat
-
-   # cara membuat instance
-
+   
+ # cara membuat instance
    1. kalian buat namanaya sesuai yg kalian inginkan
    2. terus pilih yang ubuntu terus pilih yg nano atau micro terserah
    3. nah untuk key pair pilih yg vockey
    4. nah untuk SG kalian pilih yg Select existing security group dan pilih yang SGserverWeb
    5. terus tiggal kta buat selesai
-
-7. jika database dan instancenya sudah tinggal kita konek ke instancenya
-8. kalian klik instance tersebut kemudian pilih connect terus pilih connect lagi
-9. jika sudah kalian akan masuk ke ubuntu servernya nah di ubuntu ini kalian tinnggal masukan bash scriptingnya seperti ini
 
 # bash scripting
 
@@ -65,8 +61,5 @@ sudo apt install openssl
 sudo a2enmod ssl
 sudo a2ensite default-ssl.conf
 sudo systemctl reload apache2
-
-10. jika sudah kalian bisa salin ip publick yg di bawah tempel ke browser terus masukan sandi apk nya yaitu user admin passwordnya 123
-11. jika sudah kalian bisa tambahkan data kalian atau edit data kalian selesai
 
 # sekian tutorial dari saya 😊✔
