@@ -1,4 +1,4 @@
-[#f03c15] # cara deploy aplikasi psat2425 menurut saya hehe 😊👍
+# cara deploy aplikasi psat2425 menurut saya hehe 😊👍
 # langkah langkah 👍
 
 1. bismillah dahulu unduh repo dari atau file zipnya https://github.com/paknux/psat2425 kemudian kita ekstrak
