@@ -53,7 +53,7 @@ sudo git clone https://github.com/paknux/crudsiswa.git /var/www/html >> nah ini 
 sudo chmod -R 777 /var/www/html
 
 echo DB_USER=admin > /var/www/html/.env >> biarkan admin
-echo DB_PASS=P4ssw0rd123 >> /var/www/html/.env >> ini kita masukan passwondr seperti di database
+echo DB_PASS=P4ssw0rd123 >> /var/www/html/.env >> ini kita masukan passwordseperti di database
 echo DB_NAME=crudsiswa >> /var/www/html/.env >> ini nama database kalian
 echo DB_HOST=rds11tjkt1.czt6n8ylfvyb.us-east-1.rds.amazonaws.com >> /var/www/html/.env >> nah in endpoint database kalian
 
