@@ -48,17 +48,17 @@ sudo apt install -y apache2 php php-mysql libapache2-mod-php mysql-client
 
 sudo rm -rf /var/www/html/{_,._}
 
-sudo git clone https://github.com/paknux/crudsiswa.git /var/www/html // >> nah ini githubnya ganti punya kita yang sudah kita push ya
+sudo git clone https://github.com/paknux/crudsiswa.git /var/www/html <!-- >> nah ini githubnya ganti punya kita yang sudah kita push ya -->
 
 sudo chmod -R 777 /var/www/html
 
-echo DB_USER=admin > /var/www/html/.env // >> biarkan admin 
+echo DB_USER=admin > /var/www/html/.env <!-- >> biarkan admin -->
 
-echo DB_PASS=P4ssw0rd123 >> /var/www/html/.env // >> ini kita masukan passwordseperti di database
+echo DB_PASS=P4ssw0rd123 >> /var/www/html/.env <!-- >> ini kita masukan passwordseperti di database -->
 
-echo DB_NAME=crudsiswa >> /var/www/html/.env // >> ini nama database kalian
+echo DB_NAME=crudsiswa >> /var/www/html/.env <!-- >> ini nama database kalian -->
 
-echo DB_HOST=rds11tjkt1.czt6n8ylfvyb.us-east-1.rds.amazonaws.com // >> /var/www/html/.env >> nah in endpoint database kalian
+echo DB_HOST=rds11tjkt1.czt6n8ylfvyb.us-east-1.rds.amazonaws.com <!-- >> /var/www/html/.env >> nah in endpoint database kalian -->
 
 sudo apt install openssl
 sudo a2enmod ssl
