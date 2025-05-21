@@ -38,7 +38,9 @@
    2. terus pilih yang ubuntu terus pilih yg nano atau micro terserah
    3. nah untuk key pair pilih yg vockey
    4. nah untuk SG kalian pilih yg Select existing security group dan pilih yang SGserverWeb
-   5. terus tiggal kta buat selesai
+   5. Advanced detail > user data
+        > isi user data dengan bash scriptnya
+   6. terus tinggal kta buat selesai
 
 # bash scripting
 
